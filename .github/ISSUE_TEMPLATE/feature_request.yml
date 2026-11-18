@@ -1,0 +1,47 @@
+name: Feature request
+description: Suggest a focused improvement for OneVerifyCode.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        OneVerifyCode is intentionally local-only and menu-bar-first. Proposals that add accounts, telemetry, cloud sync, or network access are out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest useful change.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Code detection
+        - Floating card
+        - Menu bar
+        - Settings and appearance
+        - History
+        - Localization
+        - Packaging and installation
+        - Documentation
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Privacy constraints
+      options:
+        - label: This request keeps all message data on the Mac and needs no network access.
+          required: true
